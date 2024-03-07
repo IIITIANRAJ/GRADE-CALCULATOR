@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRADE CALCULATOR</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <div class="n_bar">
+        <div class="t_name">GRADE CALCULATOR</div>
+    </div>
+    <div class="box">
+         <div class="grade_box">
+            <h1 style="color: red;">ENTER YOUR DETAILS</h1>
+            <label for="name">Enter your Name  </label>
+            <input type="text" id="name" placeholder="Name...">
+            <label for="rno">Enter your Roll No.  </label>
+            <input type="text" id="rno" placeholder="Roll number...">
+            <label for="math">Enter your Maths marks  </label>
+            <input type="text" id="math" placeholder="Maths..."><span id="math_error"></span>
+            <label for="phy">Enter your Physics marks  </label>
+            <input type="text" id="phy" placeholder="Physics..."><span id="phy_error"></span>
+            <label for="chem" >Enter your Chemistry marks  </label>
+            <input type="text" id="chem" placeholder="Chemistry..."><span id="chem_error"></span>
+            <label for="hindi">Enter your Hindi marks  </label>
+            <input type="text" id="hindi" placeholder="Hindi..."><span id="hindi_error"></span>
+            <label for="eng">Enter your English marks  </label>
+            <input type="text"  id="eng" placeholder="English..."><span id="eng_error"></span>
+            <div>
+            <button id="btn">Calculate</button>
+            <button onclick = handleClick()>Reset</button>
+            </div>
+             <p id="output"></p>
+         </div>
+    </div>
+</body>
+</html>
