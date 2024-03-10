@@ -7,31 +7,31 @@ button.addEventListener('click',() =>{
       const m5 = parseInt(document.getElementById('eng').value);
       const result = document.getElementById('output');
       let m1_status = false,m2_status = false,m3_status = false,m4_status = false,m5_status = false;
-      if(m1 === '' || isNaN(m1) || (m1<0)){
+      if(m1 === '' || isNaN(m1) || (m1<0) || (m1>100)){
         document.getElementById('math_error').innerHTML = 'Please provide a valid marks!'
       }
       else{
         m1_status = true;
       }
-      if(m2 === '' || isNaN(m2) || (m2<0)){
+      if(m2 === '' || isNaN(m2) || (m2<0) || (m2>100)){
         document.getElementById('phy_error').innerHTML = 'Please provide a valid marks!'
       }
       else{
         m2_status = true;
       }
-      if(m3 === '' || isNaN(m3) || (m3<0)){
+      if(m3 === '' || isNaN(m3) || (m3<0) ||(m3>100)){
         document.getElementById('chem_error').innerHTML = 'Please provide a valid marks!'
       }
       else{
         m3_status = true;
       }
-      if(m4 === '' || isNaN(m4) || (m4<0)){
+      if(m4 === '' || isNaN(m4) || (m4<0) || (m4>100)){
         document.getElementById('hindi_error').innerHTML = 'Please provide a valid marks!'
       }
       else{
         m4_status = true;
       }
-      if(m5 === '' || isNaN(m5) || (m5<0)){
+      if(m5 === '' || isNaN(m5) || (m5<0) ||(m5>100)){
         document.getElementById('eng_error').innerHTML = 'Please provide a valid marks!'
       }
       else{
@@ -56,7 +56,7 @@ button.addEventListener('click',() =>{
             result.innerHTML = 'Progressive : '+ per + '%'+' '+','+' '+'Grade : '+'C';
         }
         else if(per>=40 && per <50){
-            result.innerHTML = 'PADHAI par Dhyan Dele BSDK : '+ per + '%'+' '+','+' '+'Grade : '+'D';
+            result.innerHTML = 'Padhai par dhyan dele bsdk : '+ per + '%'+' '+','+' '+'Grade : '+'D';
         }
         else{
             result.innerHTML = 'PADHAI TERE BAS KI NHI H : '+ per + '%'+' '+','+' '+'Grade : '+'F(Fail)';
